@@ -74,7 +74,7 @@ const OrderConfirmationPage: React.FC = () => {
                             <hr className="my-4" />
                             <ul className="flex flex-col">
                                 {products.map((product) => (
-                                    <li className="flex-grow">
+                                    <li key={product.id} className="flex-grow">
                                         <figure className="flex flex-col items-center mb-3 md:flex-row">  
                                             <div><img src={product.image} className="w-20 h-20 border" /></div>
                                             <figcaption className="ml-4 mt-2 md:mt-0">  
